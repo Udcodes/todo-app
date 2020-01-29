@@ -10,7 +10,7 @@ class App extends Component {
     this.state = {
       todos: todosData
     };
-    this.handleChange = this.handleChange(this);
+    this.handleChange = this.handleChange.bind(this);
   }
   handleChange(id) {
     this.setState(prevState => {
